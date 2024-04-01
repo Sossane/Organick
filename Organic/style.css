@@ -1,0 +1,147 @@
+/*
+.body{
+    margin: 0;
+    padding: 0;
+}
+.bateau{
+    height: 100vh;
+    width: 100%;
+}
+.entete{
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+}
+.menu{
+    display: flex;
+}
+.h1{
+    color: #274C5B;
+    font: Roboto; importer les polices
+    
+}
+.decouverte{
+
+}
+.offre{
+
+}
+.temoignages{
+
+}
+.ami_nature{
+
+}
+.type_aliment{
+
+}
+.inscrire{
+
+}
+.info{
+
+}
+*/
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.bateau{
+    height: 100vh;
+    width: 100vw;
+
+}
+.entete{
+    border: 1px solid black;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nom{
+    height: 70%;
+}
+.org{
+    display: inline-flex;
+    align-items: center;
+}
+.logo{
+    height: 5vh;
+}
+
+li{
+    list-style: none;
+}
+a,a:visited{
+    color: #274C5B;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(28, 218, 28);
+}
+/****NAVBAR****/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5rem + 1.5vw);
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 650px) { 
+    .burger{
+        display: block;
+    }
+    .burger:before{
+        content: "\2630";
+    }
+
+    nav ul{
+        position: fixed;
+        left: 0;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: skyblue;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s ease;
+        margin-left: -100%;
+        
+    }
+    .nav ul.mobile-menu{
+        margin-left: 0;
+    }
+    nav li{
+        padding: 3px 0;
+
+    }
+    nav li:hover{
+        background-color: black ;
+    }
+    .entete{
+
+    }
+    .bateau{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
+}

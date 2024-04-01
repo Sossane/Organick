@@ -1,0 +1,220 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bateau{
+    height: 100vh;
+    width: 100vw;
+
+}
+.entete{
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nom{
+    height: 70%;
+}
+.org{
+    display: inline-flex;
+    align-items: center;
+}
+.logo{
+    height: 5vh;
+}
+
+li{
+    list-style: none;
+}
+a,a:visited{
+    color: #274C5B;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(28, 218, 28);
+}
+/****NAVBAR****/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5rem + 1.5vw);
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+}
+.erreur {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background:url(./image/images/404.png) ;
+    min-height:100vh;
+
+  }
+  
+  .desci {
+    text-align: center;
+    margin: 0 20px;
+    margin-top: 50%;
+    grid-column: 2;
+    margin-right: 20%;
+    align-items: center;
+  }
+  
+    .image404 {
+        display: flex;
+        
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin: 20px 0 10px;
+        color: #333;
+    }
+    
+    p {
+        font-size: 16px;
+        color: #777;
+        
+    }
+    
+    /* Bouton */
+    .btne {
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-top: 20px; /* Nouvelle propriété */
+    }
+    
+    .btne:hover {
+        background-color: #444;
+    }
+    .container{
+        display: flex;
+        height: 50vh;
+        margin-top: 10%;
+    }
+    .footer-top {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .contact-info {
+        width: 50%;
+        margin-left: 10px;
+        margin-right: 10%;
+        border-right: 1px solid black;
+        text-align: end;
+        gap: 50px;
+        justify-content: space-between;
+        
+      }
+      
+      .company-info {
+        width: 50%;
+        margin-right: 10px;
+        text-align: right;
+        text-align: start;
+        gap: 10px;
+      }
+    .footer-bottom{ 
+        margin-left: 30%;
+        margin-right: 30%;
+        justify-content: center;
+    }     
+    .social-media{
+        cursor: pointer;
+    }
+  
+@media (max-width: 650px) { 
+    .burger{
+        display: block;
+    }
+    .burger:before{
+        content: "\2630";
+    }
+
+    nav ul{
+        position: fixed;
+        left: 0;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: skyblue;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s ease;
+        margin-left: -100%;
+        
+    }
+    .nav ul.mobile-menu{
+        margin-left: 0;
+    }
+    nav li{
+        padding: 3px 0;
+
+    }
+    nav li:hover{
+        background-color: black ;
+    }
+
+    .bateau{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
+
+    .erreur {
+        flex-direction: column;
+        background-size: cover;
+      }
+    
+      .desci {
+        flex-direction: column;
+        margin: 0;
+      }
+    
+      .image404 {
+        max-width: 80%;
+      }
+
+      .container {
+        flex-direction: column; /* Stack elements vertically */
+      }
+    
+      .contact-info,
+      .company-info {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0;
+        margin-right: 0;
+        border-right: none; /* Remove border on single column */
+        text-align: left; /* Align text left on small screens */
+        gap: 10px; /* Adjust gap for smaller layout */
+      }  
+      .footer-bottom{
+        flex-direction: column;
+      }
+
+}

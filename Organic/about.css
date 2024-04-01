@@ -1,0 +1,448 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.2rem;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.bateau {
+    height: 100vh;
+    width: 100vw;
+     /* Prevent content overflow on smaller screens */
+}
+
+.entete {
+    padding: 10px; /* Consistent padding for header */
+}
+
+.nom {
+    height: 70%;
+}
+
+.org {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    height: 5vh;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    color: #274C5B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(28, 218, 28);
+}
+
+/****NAVBAR****/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5rem + 1.5vw);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.box1 {
+    display: grid;
+    margin: 0;
+    background-image: url(./image/images/620744796f82d33fff3125eb_about-banner-bg.jpg);
+    background-position: center; 
+    align-items: center; /* Aligner verticalement les éléments */
+    background-color: bisque;
+    grid-template-columns: repeat(3,1fr);
+    height: 50%;
+    background-repeat: no repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .text-container {
+    text-align: center;
+    padding-top: 25%;
+    padding-bottom: 25%;
+
+  }
+  .h1{
+    text-align: center;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    color: rgba(39, 76, 91, 1); 
+  }
+
+  .crea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .ecrit,
+  .tomate {
+    align-items: center;
+    margin-top: 10%; /* Adjust margin for better spacing on smaller screens */
+  }
+  
+  .h4 {
+    color: rgba(126, 182, 147, 1);
+  }
+  
+  .h3 {
+    color: rgba(39, 76, 91, 1);
+  }
+
+  .icon {
+    display: flex;
+  }
+  
+  .icon1,
+  .icon2 {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 2%;
+  }
+  
+  .eq {
+    display: inline-flex;
+    margin-top: 6%;
+    margin-left: 2%;
+    text-align: left;
+  }
+  
+  .btn {
+    height: 6vh;
+    width: 15%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(39, 76, 91, 1);
+    color: white;
+  }
+.h44{
+    color:rgba(126, 182, 147, 1);
+}
+.pourquoi{
+    background-color: rgba(249, 248, 248, 1);
+    min-height: 100vh;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.parceque{
+    display: flex;
+}
+.text-pontainer{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+.content1, .content2{
+    display: flex;
+    background-color: rgba(236, 236, 236, 1);
+    height: 8vh;
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*.h14{
+    border-radius: 100px;
+    background-color: green;
+    height: 1vh;
+    width: 2%;
+    text-align: center;
+
+}*/
+.h41, .h42{
+    text-align: center;
+    padding-top: 8%;
+    padding-left: 5%;
+}
+.contents .p{
+    padding-left: 10%;
+
+}
+.pontimage{
+    margin-top: 5%;
+    margin-right: 10%;
+}
+.ca{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+}
+.P1, .P2 ,.P3 ,.P4{
+    background-color: white;
+    border-radius: 15px;  
+    margin-right: 20px;  
+    margin-top: 50px;
+    width: 20%;
+    margin-bottom: 50px;
+
+
+}
+.P1img{
+    margin-left: 30%;
+    background-color: rgba(249, 248, 248, 1);
+    height: 10vh;
+    margin-top: 5%;
+    border-radius: 10%;
+    justify-content: center;
+    margin-left: 40%;
+}
+.P1h2{
+    text-align: center;
+}
+.paraP1{
+    text-align: center;
+}
+.bio{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.h3bio{
+    text-align: center;
+    color: rgba(126, 182, 147, 1);
+}
+.identité{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    height: 50%;
+    padding-bottom: 10%;
+}
+.ident1{
+    width: 78%;
+}
+.id1{
+    border-radius: 10px;
+    background-color: blueviolet;
+    
+
+}
+.ident2{
+    background-color: aliceblue ;
+    width: 78%;
+    border-radius: 10px trans;
+
+}
+.ident3{
+    background-color: gray ;
+    width: 78%;
+}
+.pro{
+    display: flex;
+}
+.agri{
+    margin-right: 40%;
+}
+.design{
+    margin-right: 40%;
+}
+.agri2{
+    margin-right: 40%;
+}
+
+.produit{
+    background-color:rgba(39, 76, 91, 1);
+    width: 100%;
+    height: 50%;
+    padding-bottom: 20%;
+    color: white;
+}
+.hoffre{
+    padding-top: 10%;
+    color: rgba(126, 182, 147, 1);
+    text-align: center;
+}
+.toffre{
+    text-align: center;
+}
+
+.offrepro{
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.h4offre{
+    text-align: center;
+}
+
+
+.newsletter-card {
+    background-image: url("image/images/Background.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.text-newsletter {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    display: flex;
+
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    opacity: 90%;
+}
+
+.btn-secondary:hover {
+    opacity: 100%;
+}
+.form-input{
+    padding: 15px 0 15px 15px;
+    border-radius: 8px;
+    
+}
+.form-input:focus{
+    border:1px solid var(--primary-color);
+}
+.mobile-full{
+    display: flex;
+    
+}
+.footer-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10%;
+    border-right: 1px solid black;
+    text-align: end;
+    gap: 50px;
+    justify-content: space-between;
+    
+  }
+  
+  .company-info {
+    width: 50%;
+    margin-right: 10px;
+    text-align: right;
+    text-align: start;
+    gap: 10px;
+  }
+.footer-bottom{ 
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+}     
+.social-media{
+    cursor: pointer;
+}
+.divider-y {
+    border: 1px solid var(--gray-color);
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 650px) {
+    .burger {
+        display: block;
+    }
+
+    .burger:before {
+        content: "\2630";
+    }
+
+    nav ul {
+        position: fixed;
+        left: 0;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: skyblue;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s ease;
+        transform: translateX(-100%); /* Off-screen initially */
+    }
+
+    nav ul.mobile-menu {
+        transform: translateX(0); /* Slide in menu on click */
+    }
+
+    nav li {
+        padding: 3px 0;
+    }
+
+    nav li:hover {
+        background-color: black;
+    }
+
+    .bateau {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
+    .box1{
+        background-repeat: no repeat;
+        background-position: 50%;
+        background-size: cover;
+    }
+    .crea {
+        grid-template-columns: repeat(1,1fr); /* Switch to single column on mobile */
+        gap: 10px; /* Adjust gap for better spacing */
+      }
+    
+      .ecrit,
+      .tomate {
+        margin-top: 5%; /* Reduce top margin on mobile */
+      }
+    
+      .eq {
+        margin-top: 0; /* Remove top margin from elements within sections */
+      }
+
+
+
+      .contact-info,
+      .company-info {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0;
+        margin-right: 0;
+        border-right: none; /* Remove border on single column */
+        text-align: left; /* Align text left on small screens */
+        gap: 10px; /* Adjust gap for smaller layout */
+      }  
+      .footer-bottom{
+        flex-direction: column;
+      }
+}
